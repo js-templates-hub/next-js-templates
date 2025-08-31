@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=League Spartan:wght@300;400;700;900&display=swap');
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@config '../../tailwind.config';
+
+@plugin '@tailwindcss/typography';
+@plugin 'tailwindcss-animate';
+
+@import './global-defaults.css';
+
+/* override light theme variables - default theme */
+
+:root {
+  --primary: #262626;
+  --primary-foreground: #ffffff;
+  --secondary: #1d4ed8;
+  --secondary-foreground: #ffffff;
+  --background: #ffffff;
+  --color: #000000;
+}
+
+.dark {
+  --primary: #dedede;
+  --primary-foreground: #000000;
+  --secondary: #384fff;
+  --secondary-foreground: #000000;
+  --background: #000000;
+  --color: #d6d6d6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary-50: color-mix(in srgb, var(--primary) 5%, white);
+  --color-primary-100: color-mix(in srgb, var(--primary) 10%, white);
+  --color-primary-200: color-mix(in srgb, var(--primary) 30%, white);
+  --color-primary-300: color-mix(in srgb, var(--primary) 50%, white);
+  --color-primary-400: color-mix(in srgb, var(--primary) 70%, white);
+  --color-primary-500: var(--primary);
+  --color-primary-600: color-mix(in srgb, var(--primary), black 10%);
+  --color-primary-700: color-mix(in srgb, var(--primary), black 30%);
+  --color-primary-800: color-mix(in srgb, var(--primary), black 50%);
+  --color-primary-900: color-mix(in srgb, var(--primary), black 70%);
+  --color-primary-950: color-mix(in srgb, var(--primary), black 90%);
+
+  --color-secondary-50: color-mix(in srgb, var(--secondary) 5%, white);
+  --color-secondary-100: color-mix(in srgb, var(--secondary) 10%, white);
+  --color-secondary-200: color-mix(in srgb, var(--secondary) 30%, white);
+  --color-secondary-300: color-mix(in srgb, var(--secondary) 50%, white);
+  --color-secondary-400: color-mix(in srgb, var(--secondary) 70%, white);
+  --color-secondary-500: var(--secondary);
+  --color-secondary-600: color-mix(in srgb, var(--secondary), black 10%);
+  --color-secondary-700: color-mix(in srgb, var(--secondary), black 30%);
+  --color-secondary-800: color-mix(in srgb, var(--secondary), black 50%);
+  --color-secondary-900: color-mix(in srgb, var(--secondary), black 70%);
+  --color-secondary-950: color-mix(in srgb, var(--secondary), black 90%);
+
+  --color-background-50: color-mix(in srgb, var(--background) 5%, white);
+  --color-background-100: color-mix(in srgb, var(--background) 10%, white);
+  --color-background-200: color-mix(in srgb, var(--background) 30%, white);
+  --color-background-300: color-mix(in srgb, var(--background) 50%, white);
+  --color-background-400: color-mix(in srgb, var(--background) 70%, white);
+  --color-background-500: var(--background);
+  --color-background-600: color-mix(in srgb, var(--background), black 10%);
+  --color-background-700: color-mix(in srgb, var(--background), black 30%);
+  --color-background-800: color-mix(in srgb, var(--background), black 50%);
+  --color-background-900: color-mix(in srgb, var(--background), black 70%);
+  --color-background-950: color-mix(in srgb, var(--background), black 90%);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@theme {
+  --font-display:
+    League Spartan, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --font-size: 14px;
+}
+
+@layer base {
+  :root {
+    font-family: var(--font-display);
+    font-size: var(--font-size);
+    background: var(--background);
+    color: var(--foreground);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: grey;
+  border-radius: 1px;
+}
