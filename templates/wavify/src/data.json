@@ -1,0 +1,433 @@
+{
+  "metadata": {
+    "settings": { "ts": true, "dir": "ltr" },
+    "styles": {
+      "defaultTheme": "light",
+      "colorPalette": {
+        "light": {
+          "id": "lightBlue",
+          "label": "Light Blue",
+          "group": "light",
+          "value": {
+            "background": "#FFFFFF",
+            "foreground": "#000000",
+            "primary": "#262626",
+            "primaryForeground": "#FFFFFF",
+            "secondary": "#1d4ed8",
+            "secondaryForeground": "#FFFFFF"
+          }
+        },
+        "dark": {
+          "id": "darkBlue",
+          "label": "Dark Blue",
+          "group": "dark",
+          "value": {
+            "background": "#000000",
+            "foreground": "#d6d6d6",
+            "primary": "#dedede",
+            "primaryForeground": "#000000",
+            "secondary": "#384fff",
+            "secondaryForeground": "#000000"
+          }
+        }
+      },
+      "fonts": { "primary": "League Spartan", "fontSize": "14px" },
+      "animation": {
+        "effects": {
+          "enabled": true,
+          "direction": "down",
+          "duration": 0.5,
+          "delay": 0.2,
+          "offset": 35,
+          "ease": "easeInOut",
+          "once": true
+        }
+      },
+      "classes": {
+        "h1": "text-4xl lg:text-6xl font-bold",
+        "h2": "text-3xl lg:text-5xl font-semibold mb-1 text-primary-500 lg:text-5xl",
+        "h3": "text-xl lg:text-2xl font-semibold mb-2",
+        "h4": "text-md lg:font-semibold mb-1",
+        "text": "my-4 opacity-90 dark:opacity-90",
+        "link": "p-4 font-semibold hover:opacity-60",
+        "img": "",
+        "button": "px-5 py-2.5 font-semibold relative overflow-hidden rounded-xl bg-secondary-700 text-secondary-50 transition-all duration-300 [transition-timing-function:cubic-bezier(0.175,0.885,0.32,1.275)] active:-translate-y-1 active:scale-x-90 active:scale-y-110 hover:-translate-y-0.5 transition duration-200",
+        "headingHighlighted": "",
+        "textEffect": "bg-linear-to-r from-background/50 to-secondary-200 bg-[length:100%_4px] bg-no-repeat bg-bottom",
+        "input": "w-full px-4 py-2 border border-foreground-200 rounded-lg shadow-sm hover:border-foreground-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition dark:focus:ring-primary-400 dark:focus:border-primary-400",
+        "inputLabel": "block text-md font-semibold mb-1",
+        "inputContainer": "mb-5"
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "id": "home",
+      "link": "/",
+      "sections": {
+        "WavifyNavbar": {
+          "id": "navbar_jx20v",
+          "file": "WavifyNavbar",
+          "label": "Navbar",
+          "containerClasses": "z-10 ",
+          "data": {
+            "title": "Wavify",
+            "img": { "alt": "logo", "src": "/images/logo.svg" },
+            "items": [
+              {
+                "button": {
+                  "label": "Contact Us",
+                  "href": "/#",
+                  "type": "link",
+                  "newTab": false
+                }
+              },
+              {
+                "button": {
+                  "label": "Privacy policy",
+                  "href": "/404",
+                  "newTab": false,
+                  "type": "link"
+                }
+              },
+              {
+                "button": {
+                  "label": "Sign Up",
+                  "href": "/#",
+                  "newTab": false,
+                  "type": "button"
+                }
+              },
+              {
+                "button": {
+                  "label": "Sign In",
+                  "href": "/#",
+                  "newTab": false,
+                  "type": "button"
+                }
+              }
+            ]
+          }
+        },
+        "WavifyHero": {
+          "id": "hero_x34nd",
+          "file": "WavifyHero",
+          "label": "Hero",
+          "containerClasses": "py-8 lg:py-12 ",
+          "data": {
+            "titleClasses": "max-w-7xl leading-tight ",
+            "title": "AI-Powered Support for 24/7 Customer Engagement",
+            "text": "Wavify helps businesses automate customer support using intelligent AI chatbots. Instantly respond to queries, reduce support load, and boost customer satisfaction—round the clock.",
+            "items": [
+              {
+                "button": {
+                  "label": "Try the Demo",
+                  "href": "/demo",
+                  "newTab": false,
+                  "type": "link"
+                }
+              },
+              {
+                "button": {
+                  "label": "Get Started Free",
+                  "href": "/",
+                  "newTab": false,
+                  "type": "button"
+                }
+              }
+            ],
+            "video": {
+              "alt": "bars 2",
+              "src": "/images/6.webp",
+              "href": "",
+              "videoSrc": ""
+            }
+          }
+        },
+        "WavifyLogos": {
+          "id": "logos_hp6rk",
+          "file": "WavifyLogos",
+          "label": "Logos",
+          "containerClasses": "py-8 lg:py-12 px-2 mx-auto max-w-7xl z-1 ",
+          "data": {
+            "title": "Big brands trust us",
+            "text": "Big brands got empowered with our AI chatbot support",
+            "imgs": [
+              {
+                "img": {
+                  "alt": "Microsoft Logo",
+                  "src": "/images/microsoft.svg"
+                }
+              },
+              { "img": { "alt": "spotify", "src": "/images/spotify.svg" } },
+              { "img": { "alt": "airbnb", "src": "/images/airbnb.svg" } },
+              {
+                "img": {
+                  "alt": "Instagram Logo",
+                  "src": "/images/instagram.svg"
+                }
+              },
+              { "img": { "alt": "Google Logo", "src": "/images/google.svg" } }
+            ]
+          }
+        },
+        "WavifyFeature": {
+          "id": "feature_ijj3w",
+          "file": "WavifyFeature",
+          "label": "Features",
+          "containerClasses": "py-8 lg:py-12 px-2 mx-auto max-w-7xl ",
+          "backgrounds": [
+            "top-[-8%] left-[-81%] [mask-size:100%] scale-[0.8] md:scale-[1.3] md:top-[-12%] md:left-[-17%] xl:left-[20%] xl:top-[-9%] xl:scale-[1.6] lg:top-[-12%] lg:left-[-4%] lg:scale-[1.7] opacity-50 m-auto h-full w-full rounded-full bg-[radial-gradient(circle_farthest-side,var(--color-secondary-500)_15%,transparent)] dark:opacity-40 dark:bg-[radial-gradient(circle_farthest-side,_15%,transparent)] w-[1000px] h-[1000px]"
+          ],
+          "data": {
+            "title": "Why Choose Wavify for Chat Support?",
+            "text": "Wavify empowers your business with intelligent AI chatbot support. Deliver instant answers, improve user satisfaction, and reduce manual workload with always-on automation.",
+            "items": [
+              {
+                "title": "Instant 24/7 Responses",
+                "text": "Wavify handles customer queries round the clock, ensuring no customer is left waiting.",
+                "img": { "alt": "24/7 Chat Support", "src": "/images/5.svg" }
+              },
+              {
+                "title": "Context-Aware AI Responses",
+                "text": "Wavify understands customer intent and provides intelligent, human-like replies with context.",
+                "img": { "alt": "Contextual Chatbot", "src": "/images/4.svg" }
+              },
+              {
+                "title": "Seamless Integrations",
+                "text": "Integrate with your existing platforms and gain insights through real-time conversation analytics.",
+                "img": { "alt": "Analytics Dashboard", "src": "/images/3.svg" }
+              }
+            ]
+          }
+        },
+        "WavifyContent": {
+          "id": "content_dmbp1",
+          "file": "WavifyContent",
+          "label": "Content",
+          "containerClasses": "py-8 lg:py-12 px-2 mx-auto max-w-7xl ",
+          "backgrounds": [
+            "top-[-8%] left-[-81%] [mask-size:100%] scale-[0.8] md:scale-[1.3] md:top-[-12%] md:left-[-17%] xl:left-[20%] xl:top-[-9%] xl:scale-[1.6] lg:top-[-12%] lg:left-[-4%] lg:scale-[1.7] opacity-50 m-auto h-full w-full rounded-full bg-[radial-gradient(circle_farthest-side,var(--color-secondary-500)_15%,transparent)] dark:opacity-40 dark:bg-[radial-gradient(circle_farthest-side,_15%,transparent)] w-[1000px] h-[1000px]"
+          ],
+          "data": {
+            "title": "Smarter Chat Support for Modern Businesses",
+            "text": "Wavify is your AI-powered chatbot support solution designed to boost customer satisfaction, reduce manual workloads, and scale support operations efficiently — all while integrating seamlessly into your existing platforms.",
+            "items": [
+              {
+                "title": "Automated Query Resolution",
+                "text": "Wavify instantly resolves repetitive customer queries using AI, freeing up your support team for complex tasks.",
+                "img": { "alt": "Automated Chat", "src": "/images/1.png" }
+              },
+              {
+                "title": "Multi-Language Support",
+                "text": "Communicate with customers globally through real-time AI translation and localization.",
+                "img": { "alt": "Language Support", "src": "/images/6.png" }
+              },
+              {
+                "title": "Insightful Conversation Analytics",
+                "text": "Track performance, measure satisfaction, and uncover trends with built-in chat analytics and reporting.",
+                "img": { "alt": "Chat Analytics", "src": "/images/7.png" }
+              }
+            ]
+          }
+        },
+        "WavifyStats": {
+          "id": "stats_2nclb",
+          "file": "WavifyStats",
+          "label": "Stats",
+          "containerClasses": "py-8 lg:py-12 px-2 mx-auto max-w-7xl ",
+          "backgrounds": [
+            "top-[-8%] left-[-81%] [mask-size:100%] scale-[0.8] md:scale-[1.3] md:top-[-12%] md:left-[-17%] xl:left-[20%] xl:top-[-9%] xl:scale-[1.6] lg:top-[-12%] lg:left-[-4%] lg:scale-[1.7] opacity-50 m-auto h-full w-full rounded-full bg-[radial-gradient(circle_farthest-side,var(--color-secondary-500)_15%,transparent)] dark:opacity-40 dark:bg-[radial-gradient(circle_farthest-side,_15%,transparent)] w-[1000px] h-[1000px]"
+          ],
+          "data": {
+            "title": "AI Chat Support That Delivers Real Results",
+            "text": "Wavify is transforming customer support with intelligent automation. See how businesses are achieving better response times, reduced workload, and happier customers.",
+            "items": [
+              {
+                "number": "24",
+                "label": "/7",
+                "text": "Automated Support Availability"
+              },
+              {
+                "number": "40",
+                "label": "%",
+                "text": "Reduction in Ticket Volume"
+              },
+              { "number": "3", "label": "x", "text": "Faster Response Time" },
+              {
+                "number": "95",
+                "label": "%",
+                "text": "Customer Satisfaction Score (CSAT)"
+              },
+              {
+                "number": "150",
+                "label": "+",
+                "text": "Businesses Supported Globally"
+              },
+              {
+                "number": "20",
+                "label": "+",
+                "text": "Languages Understood & Supported"
+              }
+            ]
+          }
+        },
+        "WavifyTestimonial": {
+          "id": "testimonial_qegti",
+          "file": "WavifyTestimonial",
+          "label": "Testimonials",
+          "containerClasses": "py-8 lg:py-12 px-2 mx-auto max-w-7xl z-1 ",
+          "data": {
+            "title": "Trusted by forward-thinking businesses.",
+            "text": "Wavify helps modern teams automate complex workflows, derive deeper insights, and make smarter decisions—faster.",
+            "items": [
+              {
+                "text": "Wavify streamlined our operations like never before. Our data reports are now generated in seconds instead of hours.",
+                "title": "Priya Shah",
+                "number": "4",
+                "img": { "alt": "Priya Shah", "src": "/images/female-3.webp" }
+              },
+              {
+                "text": "We reduced manual effort by over 60% after switching to Wavify. The automation capabilities are game-changing.",
+                "title": "James Wu",
+                "number": "5",
+                "img": { "alt": "James Wu", "src": "/images/male-3.webp" }
+              },
+              {
+                "text": "Wavify is the future of business intelligence. Their AI integrations give us a strategic edge across departments.",
+                "title": "Elena Rodriguez",
+                "number": "5",
+                "img": {
+                  "alt": "Elena Rodriguez",
+                  "src": "/images/female-1.webp"
+                }
+              }
+            ]
+          }
+        },
+        "WavifyAccordion": {
+          "id": "accordion_ctiv4",
+          "file": "WavifyAccordion",
+          "label": "Accordion/Faqs",
+          "containerClasses": "py-8 lg:py-12 px-2 mx-auto max-w-7xl ",
+          "backgrounds": [
+            "top-[-8%] left-[-81%] [mask-size:100%] scale-[0.8] md:scale-[1.3] md:top-[-12%] md:left-[-17%] xl:left-[20%] xl:top-[-9%] xl:scale-[1.6] lg:top-[-12%] lg:left-[-4%] lg:scale-[1.7] opacity-50 m-auto h-full w-full rounded-full bg-[radial-gradient(circle_farthest-side,var(--color-secondary-500)_15%,transparent)] dark:opacity-40 dark:bg-[radial-gradient(circle_farthest-side,_15%,transparent)] w-[1000px] h-[1000px]"
+          ],
+          "data": {
+            "title": "Got Questions? We've Got Answers!",
+            "text": "Find answers to common questions about how Wavify's AI chatbot can improve your support experience. Need more help? Reach out to our team anytime.",
+            "items": [
+              {
+                "title": "How does Wavify's AI chatbot work?",
+                "text": "Wavify uses advanced natural language processing to understand and respond to customer inquiries in real time—reducing resolution time and increasing customer satisfaction."
+              },
+              {
+                "title": "Can I train the chatbot with my business data?",
+                "text": "Absolutely. You can upload FAQs, product manuals, and documentation. Wavify uses this data to deliver accurate and brand-aligned responses."
+              },
+              {
+                "title": "Is Wavify available 24/7?",
+                "text": "Yes, Wavify’s AI chatbot is available around the clock to assist your customers anytime, anywhere."
+              },
+              {
+                "title": "Can the chatbot escalate to human agents?",
+                "text": "Yes. Wavify smartly detects complex queries and can hand off the conversation to your human support team when necessary."
+              }
+            ]
+          }
+        },
+        "WavifyCTA": {
+          "id": "cta_7j2ho",
+          "file": "WavifyCTA",
+          "label": "Call To Action",
+          "containerClasses": "py-8 lg:py-12 px-2 mx-auto max-w-7xl z-1 ",
+          "data": {
+            "title": "Ready to Upgrade Your Customer Support With AI?",
+            "text": "Start using Wavify and let our AI-powered chatbot handle your customer queries 24/7—faster responses, happier users, and fewer support tickets.",
+            "items": [
+              {
+                "button": {
+                  "label": "Get Started Free",
+                  "href": "#",
+                  "newTab": false,
+                  "type": "link"
+                }
+              },
+              {
+                "button": {
+                  "label": "See Demo",
+                  "href": "https://example.com/demo",
+                  "newTab": true,
+                  "type": "button"
+                }
+              }
+            ]
+          }
+        },
+        "WavifyFooter": {
+          "id": "footer_5sg7w",
+          "file": "WavifyFooter",
+          "label": "Footer",
+          "containerClasses": "pt-8 lg:pt-12 ",
+          "backgrounds": [
+            "top-[-8%] left-[-81%] [mask-size:100%] scale-[0.8] md:scale-[1.3] md:top-[-12%] md:left-[-17%] xl:left-[20%] xl:top-[-9%] xl:scale-[1.6] lg:top-[-12%] lg:left-[-4%] lg:scale-[1.7] opacity-50 m-auto h-full w-full rounded-full bg-[radial-gradient(circle_farthest-side,var(--color-secondary-500)_15%,transparent)] dark:opacity-40 dark:bg-[radial-gradient(circle_farthest-side,_15%,transparent)] w-[1000px] h-[1000px]"
+          ],
+          "data": {
+            "title": "Wavify",
+            "label": "© Wavify Inc, All rights reserved.",
+            "img": {
+              "alt": "logo",
+              "src": "/images/logo.svg"
+            },
+            "imgs": [
+              { "img": { "alt": "facebook", "src": "/images/facebook.svg" } },
+              { "img": { "alt": "youtube", "src": "/images/youtube.svg" } },
+              { "img": { "alt": "pinterest", "src": "/images/pinterest.svg" } }
+            ]
+          }
+        }
+      },
+      "seo": {
+        "title": "Wavify - AI Template",
+        "description": "Download customizable template for AI saas product. Wavify is easy to customize in the jstemplateshub.com website builder."
+      },
+      "backgrounds": [
+        "top-[-8%] left-[-81%] [mask-size:100%] scale-[0.8] md:scale-[1.3] md:top-[-12%] md:left-[-17%] xl:left-[20%] xl:top-[-9%] xl:scale-[1.6] lg:top-[-12%] lg:left-[-4%] lg:scale-[1.7] opacity-50 m-auto h-full w-full rounded-full bg-[radial-gradient(circle_farthest-side,var(--color-secondary-500)_15%,transparent)] dark:opacity-40 dark:bg-[radial-gradient(circle_farthest-side,_15%,transparent)] w-[1000px] h-[1000px]"
+      ]
+    },
+    "not-found": {
+      "id": "not-found",
+      "link": "/not-found",
+      "sections": {
+        "Wavify404": {
+          "id": "not-found_jnv41",
+          "file": "Wavify404",
+          "label": "404 Section",
+          "containerClasses": "py-8 lg:py-12 ",
+          "data": {
+            "title": "Oops page not found.",
+            "text": "The page you are trying to reach might be removed or doesn't exist.",
+            "items": [
+              {
+                "button": {
+                  "label": "Home",
+                  "href": "/",
+                  "newTab": false,
+                  "type": "button"
+                }
+              }
+            ],
+            "img": { "alt": "404 error", "src": "/images/404-2.svg" }
+          }
+        }
+      },
+      "seo": {
+        "title": "404 page not found",
+        "description": "This is page not found 404 error. You are lost"
+      },
+      "backgrounds": [
+        "top-[-8%] left-[-81%] [mask-size:100%] scale-[0.8] md:scale-[1.3] md:top-[-12%] md:left-[-17%] xl:left-[20%] xl:top-[-9%] xl:scale-[1.6] lg:top-[-12%] lg:left-[-4%] lg:scale-[1.7] opacity-50 m-auto h-full w-full rounded-full bg-[radial-gradient(circle_farthest-side,var(--color-secondary-500)_15%,transparent)] dark:opacity-40 dark:bg-[radial-gradient(circle_farthest-side,_15%,transparent)] w-[1000px] h-[1000px]"
+      ]
+    }
+  }
+}
